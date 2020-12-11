@@ -1,0 +1,25 @@
+{
+  "name": "clone_graphql",
+  "version": "1.0.0",
+  "description": "graphql study",
+  "main": "index.js",
+  "repository": "https://github.com/seongjunhwang/clone_graphql.git",
+  "author": "seongjunhwang <samkukzi3@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby-remark-prettier": "^1.0.0",
+    "gatsby-transformer-remark": "^2.12.0",
+    "graphql-yoga": "^1.18.3",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.1"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-node": "^0.0.1-security",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1"
+  }
+}
