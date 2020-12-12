@@ -1,36 +1,36 @@
 let movies = [
     {
-      id: "0",
+      id: 0,
       name: "Nicolas",
       score: 18,
     },
     {
-      id: "1",
+      id: 1,
       name: "Jisu",
       score: 18,
     },
     {
-      id: "2",
+      id: 2,
       name: "Japan Guy",
       score: 18,
     },
     {
-      id: "3",
+      id: 3,
       name: "Daal",
       score: 18,
     },
     {
-      id: "4",
+      id: 4,
       name: "JD",
       score: 18,
     },
     {
-      id: "5",
+      id: 5,
       name: "moondaddi",
       score: 18,
     },
     {
-      id: "6",
+      id: 6,
       name: "flynn",
       score: 18,
     }
@@ -39,13 +39,13 @@ let movies = [
 export const getMovies = () => movies;
 
 export const getById = id => {
-const filteredMovies = movies.filter(movie => movie.id === String(id));
+const filteredMovies = movies.filter(movie => movie.id === id);
 return filteredMovies[0];
 };
 
-export const deleteMovies = id => {
-    const cleanedMoives = movies.filter(movie => movie.id !== String(id));
-    if(movies.length > cleanedMovies.length){
+export const deleteMovie = id => {
+    const cleanedMoives = movies.filter(movie => movie.id !== id);
+    if(movies.length > cleanedMoives.length){
         movies = cleanedMoives;
         return true;
     } else{
